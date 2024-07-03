@@ -20,7 +20,7 @@ function changeCurrency(e) {
             convert: 'convert'
         },
         success: function (data) {
-            console.log(data);
+      
             countrySigns.html(data.sign);
             $('body').removeClass('loading');
             $('.processing').hide();
@@ -51,10 +51,7 @@ function checkRateIsSet() {
             console.log(data.code);
             if (data.code == 200) {
                 countrySigns.html(data.msg);
-            } else {
-                console.log('Currency not set');
             }
-
         },
         error: function (e) {
             console.log(e);
