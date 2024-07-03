@@ -48,7 +48,7 @@ function checkRateIsSet() {
         },
         success: function (data) {
 
-            console.log(data.code);
+            
             if (data.code == 200) {
                 countrySigns.html(data.msg);
             }
