@@ -20,7 +20,7 @@ function changeCurrency(e) {
             convert: 'convert'
         },
         success: function (data) {
-      
+   
             countrySigns.html(data.sign);
             $('body').removeClass('loading');
             $('.processing').hide();
@@ -35,7 +35,6 @@ function changeCurrency(e) {
     });
 
 }
-
 
 
 function autoChangeCurrency(sign) {
